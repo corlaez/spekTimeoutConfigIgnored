@@ -1,0 +1,1 @@
+data class TextDto(val s: String)

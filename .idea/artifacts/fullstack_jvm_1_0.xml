@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="fullstack-jvm-1.0">
+    <output-path>C:\Users\jarma\IdeaProjects\fullstack\build\libs</output-path>
+    <root id="archive" name="fullstack-jvm-1.0.jar">
+      <element id="module-output" name="fullstack.jvmMain" />
+    </root>
+  </artifact>
+</component>
