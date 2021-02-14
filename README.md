@@ -15,3 +15,10 @@ Maven > fullstack > Tasks > verification > jvmTest
 ## Reference 
 
 https://github.com/spekframework/spek/issues/952
+
+# Update 1
+
+I need to propagate the properties manually as in
+https://github.com/spekframework/spek/blob/2.x/integration-test/build.gradle.kts#L105
+
+This allows `spek2.execution.test.timeout=1` to work. However, tests are still sequential

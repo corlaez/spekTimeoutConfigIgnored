@@ -25,6 +25,9 @@ kotlin {
             useJUnitPlatform {
                 includeEngines("spek2")
             }
+            systemProperty("spek2.discovery.parallel.enabled", "true")
+            systemProperty("spek2.execution.parallel.enabled", "true")// tests still seem sequential
+            // systemProperty("spek2.execution.test.timeout", "1")// this works if comment is removed, breaking tests.
         }
         withJava()
     }
