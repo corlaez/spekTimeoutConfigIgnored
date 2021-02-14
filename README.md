@@ -1,12 +1,12 @@
-## Spek Timeout configuration ignored
+## Spek's configurations ignored in multiplatform project
 
-Using The new or old timeout configurations don't seem to have any effect on a kotlin multiplatform project.
+gradle.properties are ignored:
 
-For the new config, add to gradle.properties:
-`spek2.execution.test.timeout=1`
+* `spek2.discovery.parallel.enabled=true`
+* `spek2.execution.parallel.enabled=true`
+* `spek2.execution.test.timeout=1`
 
-For the old config edit the configuration of the maven taks and add vmOptions:
-`-DSPEK_TIMEOUT=1`
+The vmOption: `-DSPEK_TIMEOUT=1` is also ignored.
 
 ## Run tests
 
